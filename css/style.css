@@ -1,0 +1,88 @@
+html, body {
+
+	height: 100%;
+	width: 100%;
+
+}
+
+body {
+
+	background: url('logo.png');
+	background-repeat: repeat;
+
+}
+
+.mid {
+ 
+    text-align: center;
+    
+}
+
+.midBox {
+ 
+    margin:0; 
+    float:none;
+    
+}
+
+.fill {
+    
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: #0f7b9c;
+    border-radius: 5px; 
+    padding: 50px;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.fill:hover {
+	
+	background-color: #3e91ab;
+	
+}
+
+#menu {
+
+	height: 100%;
+
+}
+
+#game {
+ 
+    display: none;
+  
+    height: 100%;
+}
+
+#pad {
+ 
+    margin: 10px;
+    
+}
+
+.home:hover {
+
+	background-color: #3a3a3a;
+
+}
+
+.rowfull {
+
+
+	height: 100%:;
+
+}
+
+#backButton {
+
+	display: inline-block;
+
+}
+
+
+
+
+
