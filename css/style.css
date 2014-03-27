@@ -3,11 +3,11 @@ a:hover {
     text-decoration: none;
 }
 body {
-    background-image: url("image/img.jpg");
-    background-image: center center;
+    background: center top no-repeat url("image/img.jpg");
     margin: 0 auto;
     display: block;
     height: 100%;
+    width: 100%;
 }
 .mid {
     text-align: center;
@@ -36,4 +36,15 @@ thumb {
 }
 #game {
     display: none;
+}
+
+#imageContainer {
+    max-height: 900px;
+}
+#game, #menu {
+    width: 100%;
+}
+
+img {
+    vertical-align: center;
 }
