@@ -1,33 +1,25 @@
-function hideGame() {
+$("#option1, #option2, #option3").click(function () {
+    showGame();
+});
+
+$("#home").click(function () {
+    showMenu();
+})
+
+function showMenu() {
     $("#game").css({
         "display": "none"
     });
-}
-
-function showMenu() {
     $("#menu").css({
         "display": "block"
-    });
-}
-
-function hideMenu() {
-    $("#menu").css({
-        "display": "none"
     });
 }
 
 function showGame() {
+    $("#menu").css({
+        "display": "none"
+    });
     $("#game").css({
         "display": "block"
     });
 }
-
-$(".button").click(function () {
-    hideMenu();
-    showGame();
-});
-
-$(".home").click(function () {
-    hideGame();
-    showMenu();
-});
