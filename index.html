@@ -11,7 +11,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
+	
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -22,12 +22,12 @@
 </head>
 
 <body>
-    <div class="fluid-container">
+    <div class="container">
         <nav class="navbar navbar-fixed" role="navigation">
             <div class="navbar-inner">
                 <div class="container mid">
                     <div class="navbar-brand midBox" id="home">
-                        4 Picture Game
+                       
                     </div>
                 </div>
                 <!-- end middle container -->
@@ -39,46 +39,61 @@
                 <p>Please choose a topic from the ones provided below</p>
             </div>
             <!-- jumbotron -->
-            <div class="row rowfull">
-                <div class="col-sm-4 thing" id="option1">
-                    <a href="#" class="fill">
-                        Animals
-                    </a>
+            <div class="row">
+                <div class="col-sm-4" id="option1">
+                    <a href="#">
+						<img src="css/image/animal.jpg">
+						<p>Animal</p>
+					</a>
                 </div>
                 <!-- col -->
-                <div class="col-sm-4 thing" id="option2">
-                    <a href="#" class="fill">
-                        Music
-                    </a>
-                </div>
+                <div class="col-sm-4" id="option2">
+					<a href="#">
+						<img src="css/image/sports.jpg">
+						<p>Sports</p>
+						</a>
+					</div>
                 <!-- col -->
-                <div class="col-sm-4 thing" id="option3">
-                    <a href="#" class="fill">
-                        Sports
-                    </a>
-                </div>
+                <div class="col-sm-4" id="option3">
+					<a href="#">
+						<img src="css/image/music.jpg">
+						<p>Music</p>
+					</a>
+				</div>
                 <!-- col -->
             </div>
             <!-- row -->
         </div>
         <div id="game">
             <div class="row" id="imageCont">
-                <img class="img-responsive col-md-3 col-sm-6 col-sx-12" src="http://placehold.it/300">
-                <img class="img-responsive col-md-3 col-sm-6 col-sx-12" src="http://placehold.it/300">
-                <img class="img-responsive col-md-3 col-sm-6 col-sx-12" src="http://placehold.it/300">
-                <img class="img-responsive col-md-3 col-sm-6 col-sx-12" src="http://placehold.it/300">
+				<div class="col-md-3 col-sm-6 col-sx-12">
+					<img class="img-responsive" src="css/image/400.gif" alt="An image">
+				</div>
+				<div class="col-md-3 col-sm-6 col-sx-12">
+					<img class="img-responsive" src="css/image/400.gif" alt="An image">
+				</div>
+				<div class="col-md-3 col-sm-6 col-sx-12">
+					<img class="img-responsive" src="css/image/400.gif" alt="An image">
+				</div>
+				<div class="col-md-3 col-sm-6 col-sx-12">
+					<img class="img-responsive" src="css/image/400.gif" alt="An image">
+				</div>
             </div>
             <!-- row -->
-        </div>
+			<div class="row" id="wordInput">
+                <input type="text" class="form-control" placeholder="Enter your guess here.">
+                <button id="submitButton" type="submit" class="btn btn-default">Guess</button>
+            </div>
+		</div>
     </div>
     <!-- Outer Container -->
     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/holder.js"></script>
-    <script src="js/script.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/holder.js" src="js/holder.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>

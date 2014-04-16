@@ -3,7 +3,7 @@ a:hover {
     text-decoration: none;
 }
 body {
-    background: center top no-repeat url("image/img.jpg");
+    background: center top url("image/img.jpg");
     margin: 0 auto;
     display: block;
     height: 100%;
@@ -14,37 +14,77 @@ body {
 }
 .midBox {
     color: white;
-    margin: 0;
+    margin: 0 auto;
     float: none;
+	height: 280px;
+	background: center top no-repeat url("image/logo.png");
+	margin-left: -20px;
+	margin-right: 18px;
 }
 thumb {
     display: block;
     margin: 0 auto;
     margin-bottom: 20px;
 }
-.fill {
-    color: white;
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    border-color: grey;
-    border-style: solid;
-    border-radius: 5px;
-    padding: 50px;
-    font-size: 20px;
-    text-align: center;
-}
 #game {
-    display: none;
-}
-
-#imageContainer {
-    max-height: 900px;
+	display: none;
 }
 #game, #menu {
     width: 100%;
+	height: 100%;
+}
+a { 
+	display: inline-block; 
+	width: 100%;
+	margin: 0 auto;
 }
 
-img {
-    vertical-align: center;
+a img {
+	display: inline-block;
+    width:100%;
+	margin: 0 auto;
 }
+
+a p {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    background: black;
+    color: #fff;
+    opacity:0;
+    transition:1s;
+	text-align: center;
+}
+
+a:hover p {
+    opacity:1;
+}
+
+@screen and (max-width: 768px) {
+	a p {
+		opacity: 1;
+	}
+}
+.row div img {
+	display: block;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+#wordInput{
+    width:50%;
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto; 	
+}
+ 
+.form-control{
+    width:80%;
+    float:left;
+}
+
+
