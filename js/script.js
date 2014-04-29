@@ -29,8 +29,14 @@ getBackground();
 
 });
 
+function getRandomTag(){
+    var tags = ["animals", "sports", "music"];
+    var tag = tags[Math.floor(Math.random()*tags.length)];
+    return tag;
+}
+
 function getBackground(){
-    var url = "http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=a76b957313f70adde07f2658342a23f0&tags=animals&safe_search=1&per_page=20";
+    var url = "http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=a76b957313f70adde07f2658342a23f0&tags=" +getRandomTag()+ "&safe_search=1&per_page=20";
     var src;
     $.getJSON(url + "&format=json&jsoncallback=?", function(data){
         $.each(data.photos.photo, function(i,item){
