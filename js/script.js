@@ -45,6 +45,7 @@ function getBackground(){
         // $(' #body').css("background" , src);
         //alert(src);
         //window.open(src);
+        $('body').css('background-image', 'url(' + src + ')');
 
 
 });
