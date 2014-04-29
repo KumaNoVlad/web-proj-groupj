@@ -1,3 +1,4 @@
+$(document).ready(function(){
 $("#option1, #option2, #option3").click(function () {
     showGame();
 });
@@ -22,4 +23,23 @@ function showGame() {
     $("#game").css({
         "display": "block"
     });
+}
+
+getBackground();
+
+});
+
+function getBackground(){
+    var url = "http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=a76b957313f70adde07f2658342a23f0&tags=animals&safe_search=1&per_page=20";
+    var src;
+    $.getJSON(url + "&format=json&jsoncallback=?", function(data){
+        $.each(data.photos.photo, function(i,item){
+            src = "http://farm"+ item.farm +".static.flickr.com/"+ item.server +"/"+ item.id +"_"+ item.secret +"_m.jpg";
+    });
+        // $(' #body').css("background" , src);
+        //alert(src);
+        //window.open(src);
+
+
+});
 }
